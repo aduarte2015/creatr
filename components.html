@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creatr Design System - Components</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="components.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.150.0/build/three.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logos/barclays-cyan.png" alt="Creatr Logo" class="logo">
+                <span class="brand-name">Creatr</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="index-dark.html" class="nav-link">Dark Mode</a></li>
+                <li class="nav-item"><a href="#components" class="nav-link active">Components</a></li>
+                <li class="nav-item"><a href="#charts" class="nav-link">Charts</a></li>
+                <li class="nav-item"><a href="#presentations" class="nav-link">Presentations</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <button class="theme-btn" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="components-hero">
+        <div class="container">
+            <h1 class="hero-title">Design System Components</h1>
+            <p class="hero-subtitle">A comprehensive collection of UI components for creating stunning presentations</p>
+        </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <section class="toc-section">
+        <div class="container">
+            <h2>Table of Contents</h2>
+            <div class="toc-grid">
+                <a href="#typography" class="toc-item">
+                    <i class="fas fa-font"></i>
+                    <span>Typography</span>
+                </a>
+                <a href="#buttons" class="toc-item">
+                    <i class="fas fa-mouse-pointer"></i>
+                    <span>Buttons</span>
+                </a>
+                <a href="#forms" class="toc-item">
+                    <i class="fas fa-wpforms"></i>
+                    <span>Forms</span>
+                </a>
+                <a href="#cards" class="toc-item">
+                    <i class="fas fa-id-card"></i>
+                    <span>Cards</span>
+                </a>
+                <a href="#charts" class="toc-item">
+                    <i class="fas fa-chart-bar"></i>
+                    <span>Charts</span>
+                </a>
+                <a href="#slides" class="toc-item">
+                    <i class="fas fa-images"></i>
+                    <span>Slides</span>
+                </a>
+                <a href="#animations" class="toc-item">
+                    <i class="fas fa-magic"></i>
+                    <span>Animations</span>
+                </a>
+                <a href="#3d-elements" class="toc-item">
+                    <i class="fas fa-cube"></i>
+                    <span>3D Elements</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Typography Section -->
+    <section id="typography" class="component-section">
+        <div class="container">
+            <h2 class="section-title">Typography</h2>
+            <div class="component-grid">
+                <div class="component-card">
+                    <h3>Headings</h3>
+                    <div class="typography-examples">
+                        <h1>Heading 1 - Main Title</h1>
+                        <h2>Heading 2 - Section Title</h2>
+                        <h3>Heading 3 - Subsection</h3>
+                        <h4>Heading 4 - Card Title</h4>
+                        <h5>Heading 5 - Small Title</h5>
+                        <h6>Heading 6 - Micro Title</h6>
+                    </div>
+                </div>
+                <div class="component-card">
+                    <h3>Body Text</h3>
+                    <div class="typography-examples">
+                        <p class="text-large">Large text for important content</p>
+                        <p class="text-regular">Regular body text for general content</p>
+                        <p class="text-small">Small text for captions and metadata</p>
+                        <p class="text-muted">Muted text for secondary information</p>
+                    </div>
+                </div>
+                <div class="component-card">
+                    <h3>Special Text</h3>
+                    <div class="typography-examples">
+                        <p class="text-gradient">Gradient text for highlights</p>
+                        <p class="text-accent">Accent colored text</p>
+                        <p class="text-success">Success message text</p>
+                        <p class="text-warning">Warning message text</p>
+                        <p class="text-error">Error message text</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Buttons Section -->
+    <section id="buttons" class="component-section">
+        <div class="container">
+            <h2 class="section-title">Buttons</h2>
+            <div class="component-grid">
+                <div class="component-card">
+                    <h3>Primary Buttons</h3>
+                    <div class="button-examples">
+                        <button class="btn btn-primary">Primary Button</button>
+                        <button class="btn btn-primary btn-large">Large Primary</button>
+                        <button class="btn btn-primary btn-small">Small Primary</button>
+                        <button class="btn btn-primary" disabled>Disabled Primary</button>
+                    </div>
+                </div>
+                <div class="component-card">
+                    <h3>Secondary Buttons</h3>
+                    <div class="button-examples">
+                        <button class="btn btn-secondary">Secondary Button</button>
+                        <button class="btn btn-outline">Outline Button</button>
+                        <button class="btn btn-ghost">Ghost Button</button>
+                        <button class="btn btn-link">Link Button</button>
+                    </div>
+                </div>
+                <div class="component-card">
+                    <h3>Icon Buttons</h3>
+                    <div class="button-examples">
+                        <button class="btn btn-icon"><i class="fas fa-plus"></i></button>
+                        <button class="btn btn-icon btn-icon-large"><i class="fas fa-heart"></i></button>
+                        <button class="btn btn-icon btn-icon-small"><i class="fas fa-star"></i></button>
+                        <button class="btn btn-icon btn-icon-circle"><i class="fas fa-play"></i></button>
+                    </div>
+                </div>
+                <div class="component-card">
+                    <h3>Button Groups</h3>
+                    <div class="button-examples">
+                        <div class="btn-group">
+                            <button class="btn btn-primary">Left</button>
+                            <button class="btn btn-primary">Middle</button>
+                            <button class="btn btn-primary">Right</button>
+                        </div>
+                        <div class="btn-group-vertical">
+                            <button class="btn btn-secondary">Top</button>
+                            <button class="btn btn-secondary">Middle</button>
+                            <button class="btn btn-secondary">Bottom</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Forms Section -->
+    <section id="forms" class="component-section">
+        <div class="container">
+            <h2 class="section-title">Forms</h2>
+            <div class="component-grid">
+                <div class="component-card">
+                    <h3>Input Fields</h3>
+                    <form class="form-example">
+                        <div class="form-group">
+                            <label for="text-input">Text Input</label>
+                            <input type="text" id="text-input" placeholder="Enter text here">
+                        </div>
+                        <div class="form-group">
+                            <label for="email-input">Email Input</label>
+                            <input type="email" id="email-input" placeholder="Enter email here">
+                        </div>
+                        <div class="form-group">
+                            <label for="password-input">Password Input</label>
+                            <input type="password" id="password-input" placeholder="Enter password">
+                        </div>
+                        <div class="form-group">
+                            <label for="textarea-input">Textarea</label>
+                            <textarea id="textarea-input" placeholder="Enter message here" rows="4"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="component-card">
+                    <h3>Select & Checkboxes</h3>
+                    <form class="form-example">
+                        <div class="form-group">
+                            <label for="select-input">Select Dropdown</label>
+                            <select id="select-input">
+                                <option>Choose an option</option>
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="checkbox1">
+                                <span class="checkmark"></span>
+                                Checkbox Option 1
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="checkbox2" checked>
+                                <span class="checkmark"></span>
+                                Checkbox Option 2
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <label class="radio-label">
+                                <input type="radio" name="radio-group" id="radio1">
+                                <span class="radio-mark"></span>
+                                Radio Option 1
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="radio-group" id="radio2" checked>
+                                <span class="radio-mark"></span>
+                                Radio Option 2
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="component-card">
+                    <h3>Form States</h3>
+                    <form class="form-example">
+                        <div class="form-group">
+                            <label>Success State</label>
+                            <input type="text" class="form-success" value="Valid input">
+                            <span class="form-message success">This field is valid</span>
+                        </div>
+                        <div class="form-group">
+                            <label>Error State</label>
+                            <input type="text" class="form-error" value="Invalid input">
+                            <span class="form-message error">This field has an error</span>
+                        </div>
+                        <div class="form-group">
+                            <label>Warning State</label>
+                            <input type="text" class="form-warning" value="Warning input">
+                            <span class="form-message warning">This field has a warning</span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section id="cards" class="component-section">
+        <div class="container">
+            <h2 class="section-title">Cards</h2>
+            <div class="component-grid">
+                <div class="component-card">
+                    <h3>Basic Cards</h3>
+                    <div class="card-examples">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4>Card Title</h4>
+                            </div>
+                            <div class="card-body">
+                                <p>This is a basic card with header and body content.</p>
+                            </div>
+                        </div>
+                        <div class="card card-elevated">
+                            <div class="card-body">
+                                <h4>Elevated Card</h4>
+                                <p>This card has more shadow and elevation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="component-card">
+                    <h3>Image Cards</h3>
+                    <div class="card-examples">
+                        <div class="card card-image">
+                            <div class="card-image">
+                                <img src="images/christina-wocintechchat-com-glRqyWJgUeY-unsplash.jpg" alt="Card Image">
+                            </div>
+                            <div class="card-body">
+                                <h4>Image Card</h4>
+                                <p>Card with an image header.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="component-card">
+                    <h3>Interactive Cards</h3>
+                    <div class="card-examples">
+                        <div class="card card-interactive">
+                            <div class="card-body">
+                                <div class="card-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h4>Interactive Card</h4>
+                                <p>This card responds to hover and click events.</p>
+                                <button class="btn btn-primary btn-small">Action</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Charts Section -->
+    <section id="charts" class="component-section">
+        <div class="container">
+            <h2 class="section-title">Charts & Data Visualization</h2>
+            <div class="component-grid">
+                <div class="component-card">
+                    <h3>Bar Chart</h3>
+                    <div class="chart-container">
+                        <canvas id="barChart"></canvas>
+                    </div>
+                </div>
+                <div class="component-card">
+                    <h3>Line Chart</h3>
+                    <div class="chart-container">
+                        <canvas id="lineChart"></canvas>
+                    </div>
+                </div>
+                <div class="component-card">
+                    <h3>Pie Chart</h3>
+                    <div class="chart-container">
+                        <canvas id="pieChart"></canvas>
+                    </div>
+                </div>
+                <div class="component-card">
+                    <h3>Doughnut Chart</h3>
+                    <div class="chart-container">
+                        <canvas id="doughnutChart"></canvas>
+                    </div>
+                </div>
+                <div class="component-card">
+                    <h3>Area Chart</h3>
+                    <div class="chart-container">
+                        <canvas id="areaChart"></canvas>
+                    </div>
+                </div>
+                <div class="component-card">
+                    <h3>Radar Chart</h3>
+                    <div class="chart-container">
+                        <canvas id="radarChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Slides Section -->
+    <section id="slides" class="component-section">
+        <div class="container">
+            <h2 class="section-title">Presentation Slides</h2>
+            <div class="component-grid">
+                <div class="component-card">
+                    <h3>Title Slide</h3>
+                    <div class="slide-example slide-title">
+                        <h1>Presentation Title</h1>
+                        <p class="slide-subtitle">Subtitle or description</p>
+                        <p class="slide-author">By Author Name</p>
+                    </div>
+                </div>
+                <div class="component-card">
+                    <h3>Content Slide</h3>
+                    <div class="slide-example slide-content">
+                        <h2>Slide Title</h2>
+                        <ul class="slide-list">
+                            <li>First key point</li>
+                            <li>Second key point</li>
+                            <li>Third key point</li>
+                        </ul>
+                        <div class="slide-image">
+                            <img src="images/thisisengineering-w_zE6qlkQKA-unsplash.jpg" alt="Slide Image">
+                        </div>
+                    </div>
+                </div>
+                <div class="component-card">
+                    <h3>Chart Slide</h3>
+                    <div class="slide-example slide-chart">
+                        <h2>Data Visualization</h2>
+                        <div class="slide-chart-container">
+                            <canvas id="slideChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="component-card">
+                    <h3>Quote Slide</h3>
+                    <div class="slide-example slide-quote">
+                        <blockquote>
+                            "This is an inspiring quote that captures the essence of your presentation."
+                        </blockquote>
+                        <cite>- Author Name</cite>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Animations Section -->
+    <section id="animations" class="component-section">
+        <div class="container">
+            <h2 class="section-title">Animations & Transitions</h2>
+            <div class="component-grid">
+                <div class="component-card">
+                    <h3>Fade Animations</h3>
+                    <div class="animation-examples">
+                        <div class="fade-in-demo">Fade In</div>
+                        <div class="fade-in-up-demo">Fade In Up</div>
+                        <div class="fade-in-left-demo">Fade In Left</div>
+                        <div class="fade-in-right-demo">Fade In Right</div>
+                    </div>
+                </div>
+                <div class="component-card">
+                    <h3>Slide Animations</h3>
+                    <div class="animation-examples">
+                        <div class="slide-in-up-demo">Slide In Up</div>
+                        <div class="slide-in-down-demo">Slide In Down</div>
+                        <div class="slide-in-left-demo">Slide In Left</div>
+                        <div class="slide-in-right-demo">Slide In Right</div>
+                    </div>
+                </div>
+                <div class="component-card">
+                    <h3>Scale Animations</h3>
+                    <div class="animation-examples">
+                        <div class="scale-in-demo">Scale In</div>
+                        <div class="bounce-in-demo">Bounce In</div>
+                        <div class="zoom-in-demo">Zoom In</div>
+                        <div class="pulse-demo">Pulse</div>
+                    </div>
+                </div>
+                <div class="component-card">
+                    <h3>Hover Effects</h3>
+                    <div class="animation-examples">
+                        <div class="hover-lift-demo">Hover Lift</div>
+                        <div class="hover-glow-demo">Hover Glow</div>
+                        <div class="hover-rotate-demo">Hover Rotate</div>
+                        <div class="hover-scale-demo">Hover Scale</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3D Elements Section -->
+    <section id="3d-elements" class="component-section">
+        <div class="container">
+            <h2 class="section-title">3D Elements</h2>
+            <div class="component-grid">
+                <div class="component-card">
+                    <h3>3D Cards</h3>
+                    <div class="card-3d-container">
+                        <div class="card-3d">
+                            <div class="card-3d-front">
+                                <h4>Front</h4>
+                                <p>This is the front of the 3D card</p>
+                            </div>
+                            <div class="card-3d-back">
+                                <h4>Back</h4>
+                                <p>This is the back of the 3D card</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="component-card">
+                    <h3>3D Objects</h3>
+                    <div class="three-js-container">
+                        <canvas id="threeCanvas"></canvas>
+                    </div>
+                </div>
+                <div class="component-card">
+                    <h3>Parallax Elements</h3>
+                    <div class="parallax-demo">
+                        <div class="parallax-layer" data-speed="0.5">
+                            <h3>Background Layer</h3>
+                        </div>
+                        <div class="parallax-layer" data-speed="1">
+                            <h3>Foreground Layer</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress Indicators Section -->
+    <section class="component-section">
+        <div class="container">
+            <h2 class="section-title">Progress & Loading</h2>
+            <div class="component-grid">
+                <div class="component-card">
+                    <h3>Progress Bars</h3>
+                    <div class="progress-examples">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 75%"></div>
+                        </div>
+                        <div class="progress-bar progress-striped">
+                            <div class="progress-fill" style="width: 60%"></div>
+                        </div>
+                        <div class="progress-bar progress-animated">
+                            <div class="progress-fill" style="width: 45%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="component-card">
+                    <h3>Loading Spinners</h3>
+                    <div class="loading-examples">
+                        <div class="spinner"></div>
+                        <div class="spinner spinner-dots"></div>
+                        <div class="spinner spinner-pulse"></div>
+                        <div class="spinner spinner-bounce"></div>
+                    </div>
+                </div>
+                <div class="component-card">
+                    <h3>Step Indicators</h3>
+                    <div class="step-indicator">
+                        <div class="step active">
+                            <div class="step-number">1</div>
+                            <div class="step-label">Start</div>
+                        </div>
+                        <div class="step active">
+                            <div class="step-number">2</div>
+                            <div class="step-label">Process</div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-label">Complete</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notifications Section -->
+    <section class="component-section">
+        <div class="container">
+            <h2 class="section-title">Notifications & Alerts</h2>
+            <div class="component-grid">
+                <div class="component-card">
+                    <h3>Alert Messages</h3>
+                    <div class="alert-examples">
+                        <div class="alert alert-success">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Success! Your action was completed.</span>
+                        </div>
+                        <div class="alert alert-warning">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <span>Warning! Please check your input.</span>
+                        </div>
+                        <div class="alert alert-error">
+                            <i class="fas fa-times-circle"></i>
+                            <span>Error! Something went wrong.</span>
+                        </div>
+                        <div class="alert alert-info">
+                            <i class="fas fa-info-circle"></i>
+                            <span>Info! Here's some useful information.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="component-card">
+                    <h3>Toast Notifications</h3>
+                    <div class="toast-examples">
+                        <button class="btn btn-primary" onclick="showToast('success')">Success Toast</button>
+                        <button class="btn btn-secondary" onclick="showToast('error')">Error Toast</button>
+                        <button class="btn btn-outline" onclick="showToast('info')">Info Toast</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Section -->
+    <section class="component-section">
+        <div class="container">
+            <h2 class="section-title">Modals & Overlays</h2>
+            <div class="component-grid">
+                <div class="component-card">
+                    <h3>Modal Examples</h3>
+                    <div class="modal-examples">
+                        <button class="btn btn-primary" onclick="openModal('basicModal')">Basic Modal</button>
+                        <button class="btn btn-secondary" onclick="openModal('largeModal')">Large Modal</button>
+                        <button class="btn btn-outline" onclick="openModal('confirmModal')">Confirm Modal</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logos/barclays-white.png" alt="Creatr Logo" class="footer-logo-img">
+                    <span class="brand-name">Creatr</span>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Components</h4>
+                        <ul>
+                            <li><a href="#typography">Typography</a></li>
+                            <li><a href="#buttons">Buttons</a></li>
+                            <li><a href="#forms">Forms</a></li>
+                            <li><a href="#cards">Cards</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Charts</h4>
+                        <ul>
+                            <li><a href="#charts">Bar Charts</a></li>
+                            <li><a href="#charts">Line Charts</a></li>
+                            <li><a href="#charts">Pie Charts</a></li>
+                            <li><a href="#charts">Area Charts</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Presentations</h4>
+                        <ul>
+                            <li><a href="#slides">Slide Types</a></li>
+                            <li><a href="#animations">Animations</a></li>
+                            <li><a href="#3d-elements">3D Elements</a></li>
+                            <li><a href="#presentations">Templates</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Creatr Design System. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div id="basicModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Basic Modal</h3>
+                <button class="modal-close" onclick="closeModal('basicModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>This is a basic modal dialog. It can contain any content you need.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeModal('basicModal')">Cancel</button>
+                <button class="btn btn-primary" onclick="closeModal('basicModal')">Confirm</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="largeModal" class="modal">
+        <div class="modal-content modal-large">
+            <div class="modal-header">
+                <h3>Large Modal</h3>
+                <button class="modal-close" onclick="closeModal('largeModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p>This is a large modal with more space for content.</p>
+                <div class="chart-container">
+                    <canvas id="modalChart"></canvas>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeModal('largeModal')">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="confirmModal" class="modal">
+        <div class="modal-content modal-small">
+            <div class="modal-body">
+                <div class="modal-icon">
+                    <i class="fas fa-question-circle"></i>
+                </div>
+                <h3>Confirm Action</h3>
+                <p>Are you sure you want to perform this action?</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeModal('confirmModal')">Cancel</button>
+                <button class="btn btn-primary" onclick="closeModal('confirmModal')">Confirm</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="components.js"></script>
+</body>
+</html>
