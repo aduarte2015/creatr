@@ -290,7 +290,3 @@ For issues and questions:
 3. **API quota**: Check your Anthropic API usage and limits
 4. **Network**: Verify both servers are accessible and responding
 
----
-
-**🚀 Built with React, Rails, and Claude AI | ✨ Powered by modern web technologies**# creatr
-# creatr
