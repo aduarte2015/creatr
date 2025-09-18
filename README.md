@@ -292,4 +292,4 @@ For issues and questions:
 
 ---
 
-**🚀 Built with React, Rails, and Claude AI | ✨ Powered by modern web technologies**
+**🚀 Built with React, Rails, and Claude AI | ✨ Powered by modern web technologies**# creatr
