@@ -7,10 +7,6 @@ Rails.application.routes.draw do
 
   # API routes
   post "/generate", to: "slides#generate"
-  post "/download", to: "slides#download"
-
-  # Serve assets from the parent directory
-  get "/assets/*path", to: "assets#show"
 
   # Defines the root path route ("/")
   # root "posts#index"
